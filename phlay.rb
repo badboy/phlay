@@ -409,7 +409,7 @@ class Meta
           :oldLength => hunk.old_lines,
           :newOffset => hunk.new_start,
           :newLength => hunk.new_lines,
-          :corpus => corpus.join(''),
+          :corpus => corpus.join('').force_encoding("UTF-8"),
         }
       end
 
